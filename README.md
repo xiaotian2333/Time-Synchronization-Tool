@@ -7,7 +7,11 @@
 
 > 由于 windows 的限制，必须使用管理员权限运行
 
-## 安装方法
+## 二进制启动
+
+在 release 中下载对应系统的二进制文件，解压后直接运行`mian.exe`即可
+
+## 源码启动
 
 确保你电脑已经有 python 环境，如没有请前往 [python官网](https://www.python.org/downloads/) 下载安装  
 输入以下命令安装依赖
@@ -35,3 +39,9 @@ python mian.py
 
 仅测试 `win10-python311` 环境可用  
 理论支持windows 7及以上版本
+
+## 构建
+
+``` cmd
+python -m nuitka --standalone --main="mian.py" --product-version="1.0" --copyright="小天" --trademarks="小天" --windows-uac-admin --windows-icon-from-ico="logo.ico" --follow-imports --python-flag="-S" --windows-console-mode="disable" --product-name="系统时间同步工具" 
+```
