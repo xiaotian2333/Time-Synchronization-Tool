@@ -42,6 +42,19 @@ python mian.py
 
 ## 构建
 
+使用 nuitka 构建 windows 可执行文件  
+开发环境版本信息（仅供参考）  
+
+``` ini
+nuitka-version="2.5.9"
+gcc="14.2.0"
+Python="3.11.9"
+Arch="X86_64"
+OS="Windows 10"
+```
+
+构建命令
+
 ``` cmd
 python -m nuitka --standalone --main="mian.py" --product-version="1.0" --copyright="小天" --trademarks="小天" --windows-uac-admin --windows-icon-from-ico="logo.ico" --follow-imports --python-flag="-S" --windows-console-mode="disable" --product-name="系统时间同步工具" 
 ```
