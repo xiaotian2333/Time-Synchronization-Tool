@@ -56,5 +56,5 @@ OS="Windows 10"
 构建命令
 
 ``` cmd
-python -m nuitka --standalone --main="mian.py" --product-version="1.0" --copyright="小天" --trademarks="小天" --windows-uac-admin --windows-icon-from-ico="logo.ico" --follow-imports --python-flag="-S" --windows-console-mode="disable" --product-name="系统时间同步工具" 
+python -m nuitka --standalone --main="mian.py" --product-version="1.1" --copyright="小天" --trademarks="小天" --windows-uac-admin --windows-icon-from-ico="logo.ico" --follow-imports --python-flag="-S" --windows-console-mode="disable" --product-name="系统时间同步工具" 
 ```
